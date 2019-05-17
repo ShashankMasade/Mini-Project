@@ -1,0 +1,63 @@
+Starting point:equitiesentry1.py
+file:///home/dharma/Tensorflow/Projects_new/Equities_estimator/equities_training.csv
+
+sudo pip install tensorflow --ignore-installed
+sudo pip install wheel pandas
+ 
+Current test data is the current set of data to be classified/used in Tensorflow.
+
+Screens:
+1) screen to enter data into Training data & Test data
+2) Screen to input the current test data
+3) Screen to export data from db into .csv files
+4) Screen for the locations of Training data & Test data files(if the files already existing)
+
+DB Entities:
+1) Training data: dayhigh,daylow,pdclose,pdvar....previous day close, previous day variance
+2) Test data:dayhigh,daylow,pdclose,pdvar
+3) Current Test Data:dayhigh,daylow,pdclose,pdvar
+
+pyuic4 equitiesentry.ui -o equitiesentry.py
+pyuic4 cdataentry.ui -o cdataentry.py
+pyuic4 export.ui -o export.py
+pyuic4 exectensor.ui -o exectensor.py
+
+mysql -u root -p
+123456
+CREATE DATABASE eqre1;
+?? create user 'team1'@'localhost' identified by 'test623';
+GRANT ALL ON eqre1.* TO 'team1'@'localhost';
+exit and login as team1;
+use eqre1;
+
+CREATE TABLE testdata
+(
+prevclose varchar(10),
+daylow varchar(10),
+dayhigh varchar(10),
+prevvar varchar(10),
+riskcat varchar(1)  
+);
+
+CREATE TABLE traindata
+(
+prevclose varchar(10),
+daylow varchar(10),
+dayhigh varchar(10),
+prevvar varchar(10),
+riskcat varchar(1)   
+);
+
+CREATE TABLE ctestdata
+(
+prevclose varchar(10),
+daylow varchar(10),
+dayhigh varchar(10),
+prevvar varchar(10),
+riskcat varchar(1)   
+);
+
+
+Future expansions:
+
+
