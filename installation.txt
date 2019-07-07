@@ -1,0 +1,38 @@
+Connect your laptop to the internet, and execute the following instructions one by one.
+Some of the instructions may take long time to execute(15 to 20 mins., or even more).
+Be patient, and execute them one by one, sequentially.
+If possible, save the screen shots now and then, during the installation process.
+
+1) If your system don't have Python, then install Python by down loading it from the following site.
+https://www.python.org/downloads/release/python-370/ 
+     Download Windows x86-64 executable installer...if your laptop is a 64-bit machine.
+     During installation, Check the radio box(with a tick mark) corresponding to Add path... 
+Note: Anaconda's python is not enough. You should have a separate Python.
+
+2) After successful installation of python, open the command prompt(CMD) and give the command python -V.
+   If python version is displayed, then your installation is successful.
+   If your installation is not successful, then skip the following 3,4,5,6 commands.
+    
+
+3) Execute the command from command prompt(CMD): pip3 install wheel
+you need to type 'y', if the system asks you to choose y/n
+if the above command don't work, then use: pip install wheel
+
+4) Execute the command from command prompt(CMD): pip3 install pyqt5
+if the above command don't work, then use: pip install pyqt5
+
+5)Execute the command from command prompt(CMD): pip3 install pillow
+if the above command don't work, then use: pip install pillow
+
+6)Execute the command from command prompt(CMD): pip3 install opencv-python
+if the above command don't work, then use: pip install opencv-python
+
+7) Install sqlite by downloading it from the following site: https://www.sqlite.org/download.html
+Download sqlite-tools-win32-x86-3240000.zip(1.64 MiB)...under "Precompiled Binaries for Windows" section.
+If the system asks for a password to sql, during installation, give it as  123456
+
+8) If your system don't have Anaconda, then install Anaconda by downloading it from: https://www.anaconda.com/download/    
+
+9) Don't get worried, if some thing is not installed correctly, and you got stuck.
+We'll set things right, when I come to your college next week.
+!! Be happy and enjoy the installation process.    .
